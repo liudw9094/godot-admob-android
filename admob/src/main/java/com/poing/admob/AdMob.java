@@ -637,6 +637,7 @@ public class AdMob extends org.godotengine.godot.plugin.GodotPlugin {
                             // Called when ad fails to show.
                             aRewardedAd = null;
                             emitSignal("rewarded_ad_failed_to_show", adError.getCode());
+                            aIsRewardedLoaded = false;
                         }
 
                         @Override
